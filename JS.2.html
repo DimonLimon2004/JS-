@@ -1,0 +1,16 @@
+<script>
+var bodyMass, bodyHeight, index;
+bodyMass = prompt("Каков ваш массу в килограммах", 70);
+bodyHeight = prompt("Каков ваш рост в сантиметрах?", 177);
+index = bodyMass / (bodyHeight * bodyHeight) * 10000;
+if (index < 18.5) {
+    alert("Дефицит");
+}
+else if (index >= 25) {
+    alert("Избыток");
+}
+else {
+    alert ("Всё хорошо");
+}
+
+</script>
